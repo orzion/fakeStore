@@ -3,7 +3,7 @@ const conteiner = document.querySelector('#conteiner');
 fetch('https://fakestoreapi.com/products')
   .then(res => res.json())
   .then(products => {
-    console.log(products);
+    //console.log(products);
     products.forEach(product=>{
         let newDiv = document.createElement('div');
         newDiv.classList.add('bg-white','p-4','rounded-lg','shadow','hover:shadow-md','transition','duration-300','cursor-pointer');
